@@ -1,0 +1,50 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="TickTockG2"
+run/main_scene="res://Scenes/Levels/SceneTest.tscn"
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
+config/icon="res://Sprites/icond.jpg"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/resizable=false
+window/size/fullscreen=true
+window/dpi/allow_hidpi=true
+window/vsync/vsync_via_compositor=true
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/nv.file_system/plugin.cfg" )
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[mono]
+
+project/assembly_name="TickTockG2"
+
+[physics]
+
+3d/smooth_trimesh_collision=true
+common/enable_pause_aware_picking=true
+3d/physics_engine="Bullet"
+
+[rendering]
+
+quality/driver/fallback_to_gles2=true
+quality/filters/msaa=1
+quality/filters/use_fxaa=true
+environment/default_environment="res://Configs & Bakes/default_env.tres"

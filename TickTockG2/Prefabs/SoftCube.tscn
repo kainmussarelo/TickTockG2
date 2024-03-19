@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="Soft" type="Spatial"]
+
+[node name="SoftBody" type="SoftBody" parent="."]
+mesh = SubResource( 1 )
